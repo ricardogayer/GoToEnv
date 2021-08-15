@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	err := godotenv.Load()
+	err := godotenv.Load()  // este método ler o arquivo .env
 	err = godotenv.Load("prod.env")
 	if err != nil {
 		log.Println("Erro lendo as variáveis de ambiente")
